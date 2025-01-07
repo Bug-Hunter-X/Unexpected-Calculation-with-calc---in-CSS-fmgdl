@@ -1,0 +1,17 @@
+/* bugSolution.css */
+/* Instead of relying on percentage calculation, set a fixed width for the parent. */
+.parent {
+  width: 500px; /* Or any fixed width */
+}
+
+.child {
+  width: calc(50% - 10px);
+}
+
+/* Alternatively, avoid mixed units. Use only percentages or pixels. */
+.parent2 {
+  width: 100%;
+}
+.child2 {
+  width: 490px; /* Or an equivalent percentage */
+}
